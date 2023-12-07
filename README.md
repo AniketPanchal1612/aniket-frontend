@@ -27,19 +27,19 @@ Install my-project with npm
 
 1. Inside Src-| assets, components,slices
 
-2. slices-| BookingSlice.js, FetchSinglePropertySlice.js, FilterSlice.js, PropertyDataSlice.js, SearchSlice.js, UserDetailSlice.js
+2. slices (folder) -| BookingSlice.js, FetchSinglePropertySlice.js, FilterSlice.js, PropertyDataSlice.js, SearchSlice.js, UserDetailSlice.js
 
-3. Inside components -|home.layouts,property,users
+3. Inside components (folder) -|home.layouts,property,users
 
-4. home-|
+4. home (folder) -|
       Home.jsx
 
-5. layouts-| Banner.jsx, CustomeLoader.jsx, CustomLoader.css, Footer.jsx, Navbar.jsx, Search.jsx
+5. layouts (folder) -| Banner.jsx, CustomeLoader.jsx, CustomLoader.css, Footer.jsx, Navbar.jsx, Search.jsx
 
 
-6. property-| PropertyDetail.jsx, PropertyPage.jsx,PropertyFilter.jsx, PropertyList.jsx
+6. property (folder)-| PropertyDetail.jsx, PropertyPage.jsx,PropertyFilter.jsx, PropertyList.jsx
 
-7. users-| ConfirmDetail.jsx, MyBookedPage.jsx, UserInfoForm.jsx
+7. users (folder)-| ConfirmDetail.jsx, MyBookedPage.jsx, UserInfoForm.jsx
 
         
 
