@@ -12,7 +12,7 @@ const Banner = () => {
             Rent the smart way <br /> with Nestaway!
           </h2>
 
-          <ul className="flex flex-row gap-5 text-xs lg:text-sm">
+          <ul className="flex flex-row gap-5 text-xs pl-2 lg:pl-0 lg:text-sm">
             <li className="flex items-center gap-1">
               <FaCheck className="text-green-600" />
               Great Homes
