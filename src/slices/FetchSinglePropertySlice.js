@@ -1,18 +1,16 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
-// Define an async thunk action to fetch a single property by ID
 export const fetchPropertyById = createAsyncThunk(
   'property/fetchPropertyById',
   async (id, thunkAPI) => {
     try {
-      const response = await fetch('https://mocki.io/v1/c1b8d087-971c-472f-870c-47185f710c17'); // Replace with your endpoint
+      const response = await fetch('https://mocki.io/v1/c1b8d087-971c-472f-870c-47185f710c17'); 
       const data = await response.json();
       // console.log(data)
-      // Assuming data is of the format { data: { data: { houses: [] } } }
+      
       const houses = data?.houses || [];
       console.log(houses)
-      // Find the house object with the matching ID
+     
       console.log(id)
       // const property = houses.find((house) => house.id === id);
       const idToCompare = parseInt(id, 10); // Converting 'id' to an integer

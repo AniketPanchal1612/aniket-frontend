@@ -5,7 +5,11 @@
 
 ## Installation
 
+
+
 Install my-project with npm
+
+Clone Repo then inside dir
 
 ```bash
   npm install 
