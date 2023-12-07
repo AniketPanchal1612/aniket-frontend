@@ -29,8 +29,8 @@ const Banner = () => {
         </div>
         <img src={BannerImg} alt="Banner" className="hidden lg:block" />
 
-      {/* Explore Homes */}
       </div>
+      {/* Explore Homes */}
         <Link to={`/houses`} className="mb-6 bg-green-500 text-white p-2 rounded-md">
           Explore Houses
         </Link>

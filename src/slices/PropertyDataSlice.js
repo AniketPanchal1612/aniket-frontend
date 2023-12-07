@@ -1,5 +1,3 @@
-// dataSlice.js
-
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchData = createAsyncThunk("data/fetchData", async () => {

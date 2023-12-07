@@ -3,6 +3,7 @@ import Navbar from '../layouts/Navbar'
 import Banner from '../layouts/Banner'
 import Search from '../layouts/Search'
 import Footer from '../layouts/Footer'
+import ReferEarnBanner from '../layouts/ReferEarnBanner'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <Navbar />
         <Banner />
         <Search />
+        <ReferEarnBanner />
         <Footer />
       
     </div>
