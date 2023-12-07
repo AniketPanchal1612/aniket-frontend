@@ -9,7 +9,9 @@
 
 Install my-project with npm
 
-Clone Repo then inside dir
+Clone the Repo then inside aniket-frontend folder
+
+install node_modules
 
 ```bash
   npm install 
