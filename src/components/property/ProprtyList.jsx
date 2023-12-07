@@ -35,9 +35,7 @@ const ProprtyList = () => {
 
   const { data, loading } = useSelector((state) => state.data);
 
-  // useEffect(() => {
-  //   console.log(data.houses); // This will log the fetched data
-  // }, [data]);
+
 
   return (
     <div>
@@ -62,11 +60,11 @@ const ProprtyList = () => {
                 } ${
                   index === 0
                     ? "rounded-l"
-                    : "" /* Rounded left border for first div */
+                    : "" 
                 } ${
                   index === roomTypes.length - 1
                     ? "rounded-r"
-                    : "" /* Rounded right border for last div */
+                    : ""
                 }`}
               >
                 {type}

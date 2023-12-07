@@ -1,6 +1,6 @@
 import React from "react";
 import { ProgressBar } from "react-loader-spinner";
-import "./CustomLoader.css"; // Import CSS file for custom styles
+import "./CustomLoader.css"; 
 
 const CustomLoader = () => {
   return (

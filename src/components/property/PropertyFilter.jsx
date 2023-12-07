@@ -15,18 +15,7 @@ const ProperyFilter = () => {
   const [selectedBedroom, setSelectedBedroom] = useState("");
   const [selectedBudget, setSelectedBudget] = useState("");
   const [selectedFurnishings, setSelectedFurnishings] = useState("");
-  // const locations = [
-  //   "Ahmedabad",
-  //   "Hyderabad",
-  //   "Mumbai",
-  //   "Pune",
-  //   "Delhi",
-  //   "Chennai",
-  //   "Kolkata",
-  //   "Bangalore",
-  //   "Jaipur",
-  //   "Lucknow",
-  // ];
+
   const tenantTypes = ["Any", "Boys", "Girls", "Family"];
   const bedroomTypes = ["1 BHK", "2 BHK", "3 BHK", "4 BHK"];
   const budgetTypes = [

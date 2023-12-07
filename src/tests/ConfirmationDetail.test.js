@@ -1,7 +1,7 @@
 import { render, fireEvent } from '@testing-library/react';
 import { useDispatch, useSelector } from 'react-redux'; 
 import ConfirmationDetail from './../components/users/ConfirmationDetail'; 
-// Mock useDispatch and useSelector
+
 jest.mock('react-redux', () => ({
   ...jest.requireActual('react-redux'),
   useDispatch: jest.fn(),

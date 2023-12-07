@@ -7,7 +7,7 @@ const ConfirmationDetail = () => {
   const userData = useSelector((state) => state.user.userData);
   const selectedProperty = useSelector(
     (state) => state.singleProperty.property
-  ); // Adjust this based on your property structure
+  ); 
   console.log(selectedProperty);
 
   const dispatch = useDispatch();

@@ -17,9 +17,7 @@ const PropertyPage = () => {
       <hr className="w-full border-gray-400" />
       <div>
         <div className="flex">
-          {/* <div className="hidden lg:block lg:w-1/4 pr-4 border-r border-gray-500">
-            <ProperyFilter />
-          </div> */}
+         
 
           <div
             className={`lg:block lg:w-1/4 pr-4 border-r border-gray-500 ${

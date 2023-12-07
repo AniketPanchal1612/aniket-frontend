@@ -1,9 +1,8 @@
-// searchSlice.js
 
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  searchQuery: '', // Initial search query is empty
+  searchQuery: '', 
 };
 
 const searchSlice = createSlice({

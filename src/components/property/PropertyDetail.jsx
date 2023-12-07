@@ -1,7 +1,7 @@
-// // SinglePropertyDetailPage.jsx
+
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPropertyById } from "./../../slices/FetchSinglePropertySlice"; // Import the fetchPropertyById action
+import { fetchPropertyById } from "./../../slices/FetchSinglePropertySlice"; 
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

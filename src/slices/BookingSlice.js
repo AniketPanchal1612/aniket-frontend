@@ -1,9 +1,8 @@
-// bookingSlice.js
 
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  bookings: [], // Initialize an empty array to hold multiple booking details
+  bookings: [], 
 };
 
 const bookingSlice = createSlice({
