@@ -1,70 +1,86 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frontend Assignment
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install my-project with npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+  npm install 
+  npm start
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    
+### Hosted URL of Frontend Assignment
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  https://aniket-frontend.vercel.app/
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Documentation
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Inside Src-| assets, components,slices
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. slices-| BookingSlice.js, FetchSinglePropertySlice.js, FilterSlice.js, PropertyDataSlice.js, SearchSlice.js, UserDetailSlice.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Inside components -|home.layouts,property,users
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. home-|
+      Home.jsx
 
-## Learn More
+5. layouts-| Banner.jsx, CustomeLoader.jsx, CustomLoader.css, Footer.jsx, Navbar.jsx, Search.jsx
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. property-| PropertyDetail.jsx, PropertyPage.jsx,PropertyFilter.jsx, PropertyList.jsx
 
-### Code Splitting
+7. users-| ConfirmDetail.jsx, MyBookedPage.jsx, UserInfoForm.jsx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Short Desc of each file(jsx and js)
 
-### Making a Progressive Web App
+1. Home - Inside home file there are 4 components(Navbar, Banner, Search, Footer) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Navbar - Basic navbar with myBooking page link
 
-### Advanced Configuration
+3. Footer - Basic Footer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Search - SearchBar Feature
 
-### Deployment
+5. CustomeLoader - Add Loader with custom css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+6. PropertyPage - Inside this file there are 2 component(PropertyFilter, PropertyList)
 
-### `npm run build` fails to minify
+7. PropertyFilter - Search and Filter functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. PropertyList - Contain list and display to client(user)
+
+9. PropertyDetail - Contail all detail of perticular Property
+
+10. UserInfoForm - User need to fill detail here
+
+11. ConfirmationDetail - display brief summary of users and selected Property
+
+12. MyBookedPage: Display their booked properties list
+
+
+## Short Desc of each slices(redux)
+
+1. UserDetailSlice - Functions store user details
+
+2. SeachSlice - User enter keyword then store 
+
+3. PropertyDataSlice - fetch data from api and store
+
+4. FilterSlice - Store keyword for Tenant type, Budget, Furnished, Bedrooms
+
+5. FetchSinglePropertySlice - compare with params id and fetch single property  
+
+6. BookingSlice - Store booked property
