@@ -13,7 +13,7 @@ const Search = ({ hideText }) => {
   
   const handleSearch = () => {
     dispatch(setSearchQuery(locality));
-    navigate('/list'); // Redirect to PropertyList component after setting search query
+    navigate('/houses'); // Redirect to PropertyList component after setting search query
   };
 
   const handleKeyPress = (e) => {

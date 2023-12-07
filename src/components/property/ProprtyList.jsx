@@ -3,16 +3,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../slices/PropertyDataSlice";
 import { Link } from "react-router-dom";
 import CustomLoader from "../layouts/CustomLoader";
-
+import Search from "../layouts/Search";
 
 const ProprtyList = () => {
   const dispatch = useDispatch();
   const searchQuery = useSelector((state) => state.search.searchQuery);
-  
+
   const selectedType = useSelector((state) => state.filters.selectedType);
   const selectedBedroom = useSelector((state) => state.filters.selectedBedroom);
   const selectedBudget = useSelector((state) => state.filters.selectedBudget);
-  const selectedFurnishings = useSelector((state) => state.filters.selectedFurnishings);
+  const selectedFurnishings = useSelector(
+    (state) => state.filters.selectedFurnishings
+  );
 
   const [selectedRoom, setSelectedRoom] = useState("Flat");
   const roomTypes = ["Independent", "Flat", "Apartment"];
@@ -21,10 +23,15 @@ const ProprtyList = () => {
     setSelectedRoom(type);
   };
 
-
   useEffect(() => {
     dispatch(fetchData());
-  }, [dispatch,selectedType,selectedFurnishings,selectedBedroom,selectedBudget]);
+  }, [
+    dispatch,
+    selectedType,
+    selectedFurnishings,
+    selectedBedroom,
+    selectedBudget,
+  ]);
 
   const { data, loading } = useSelector((state) => state.data);
 
@@ -38,9 +45,10 @@ const ProprtyList = () => {
         <CustomLoader className="flex" />
       ) : (
         <div className="bg-gray-100">
-          <div className="lg:hidden md:hidden">
-            
+          <div className="flex mt-3 lg:hidden md:hidden p-3">
+            <Search hideText={true} />
           </div>
+          <div className="lg:hidden md:hidden"></div>
           {/* Room Types */}
           <div className="hidden lg:flex flex-wrap pt-10 justify-center text-2xl">
             {roomTypes.map((type, index) => (
@@ -72,21 +80,21 @@ const ProprtyList = () => {
               ?.filter((house) => {
                 if (searchQuery) {
                   const query = searchQuery.toLowerCase();
-                  const bed = selectedBedroom.toLowerCase()
+                  const bed = selectedBedroom.toLowerCase();
                   const genderType = selectedType.toLowerCase();
                   const furnish = selectedFurnishings.toLowerCase();
-                  console.log(bed,genderType,furnish,query)
+                  console.log(bed, genderType, furnish, query);
                   // const roomType = selectedRoom.toLowerCase();
                   // console.log(roomType);
                   return (
-                    (house.locality.toLowerCase().includes(query) ||
-                      house.description.short_description
-                        .toLowerCase()
-                        .includes(query))
-                        // (house.gender.toLowerCase() === genderType)
-                        // &&
-                        // (house.bhk_details.toLowerCase()==bed)&&
-                        // (house.furnishing_type.toLowerCase()==furnish)
+                    house.locality.toLowerCase().includes(query) ||
+                    house.description.short_description
+                      .toLowerCase()
+                      .includes(query)
+                    // (house.gender.toLowerCase() === genderType)
+                    // &&
+                    // (house.bhk_details.toLowerCase()==bed)&&
+                    // (house.furnishing_type.toLowerCase()==furnish)
                     //      &&
                     // (selectedRoom === "Flat" ||
                     //   house.house_type.toLowerCase() === roomType) &&

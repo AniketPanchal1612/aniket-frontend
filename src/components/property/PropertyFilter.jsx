@@ -7,7 +7,7 @@ import {
   setFilterBudget,
   setFilterFurnishings,
   clearAllFilters,
-} from './../../slices/FilterSlice'
+} from '../../slices/FilterSlice'
 import { useDispatch } from "react-redux";
 const ProperyFilter = () => {
   const dispatch = useDispatch();
@@ -191,7 +191,7 @@ const ProperyFilter = () => {
                   <div className="flex justify-between mt-4">
 
       <button className="text-xs underline text-blue-800" onClick={clearAllfilters}>Clear All Filters</button>
-      <button className="text-xs  text-white bg-black rounded-lg p-2">Apply Filter</button>
+     
                   </div>
 
         </div>

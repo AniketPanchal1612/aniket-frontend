@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState("");
   const [selectedGender, setSelectedGender] = useState("");
-  const booking = useSelector(state=>state.booking)
+  const booking = useSelector((state) => state.booking);
 
   const locations = [
     "Ahmedabad",
@@ -44,9 +44,10 @@ const Navbar = () => {
     <div className="sticky top-0 bg-white">
       <div className="ml-5 pt-5 pb-3 flex flex-row gap-6 justify-between pr-4">
         <div className="flex flex-row gap-6">
-          <Link to={'/'}>
-          <Logo className="cursor-pointer" />
+          <Link to={"/"}>
+            <Logo className="cursor-pointer" />
           </Link>
+
           <div
             className=" flex-row items-center justify-center gap-2 hidden lg:flex"
             onClick={handleDropdownClick}
@@ -57,7 +58,7 @@ const Navbar = () => {
               <RiArrowDropDownLine className="mt-1" />
             </div>
             <div className="flex flex-row">
-              <p>{selectedGender || "Select a gender"}</p>
+              <p>{selectedGender ||genders[1]}</p>
               <RiArrowDropDownLine className="mt-1" />
             </div>
           </div>
@@ -98,8 +99,16 @@ const Navbar = () => {
         </div>
 
         {/* Booking Page Link */}
-      <Link to={'/mybookings'} className="bg-black rounded-md text-white p-2 text-xs flex items-center gap-1">My Bookings <LuHotel /> {booking?.bookings?.length >0 ?booking?.bookings?.length:0 }</Link>
+
+        <Link
+          to={"/mybookings"}
+          className="bg-black rounded-md text-white p-2 text-xs flex items-center gap-1"
+        >
+          My Bookings <LuHotel />{" "}
+          {booking?.bookings?.length > 0 ? booking?.bookings?.length : 0}
+        </Link>
       </div>
+      
     </div>
   );
 };

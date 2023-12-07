@@ -11,8 +11,9 @@ import MyBookedPage from './components/users/MyBookedPage';
 function App() {
   return (
     <BrowserRouter>
+  
       <Routes>
-
+        
         <Route path='/' element={<Home />} exact />
         <Route path='/houses' element={<PropertyPage />} exact />
         <Route path='/houses/:id' element={<PropertyDetail />} exact />
